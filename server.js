@@ -1,17 +1,20 @@
 var http = require('http');
 var url = require('url');
 
-function start() {
-    function onRequest(request, response) {
-      var pathname = url.parse(request.url).pathname;
-      console.log('Request for ' + pathname + ' received.');
-      response.writeHead(200, {'Content-Type': 'text/plain'});
-      response.write('Colde World');
-      response.end;
-    }
+function start(route) {
+  function onRequest(request, response) {
+    var pathname = url.parse(request.url).pathname;
+    console.log('Request for ' + pathname + 'received');
+
+    route(pathname);
     
-    http.createServer(onRequest).listen(8888);
-    console.log('We on');
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+    response.write('Cold World');
+    response.end();
   }
 
-  exports.start = start;
+  http.createServer(onRequest).listen(8888);
+  console.log("We on");
+}
+
+exports.start = start;
