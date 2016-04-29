@@ -10,6 +10,13 @@ var server = http.createServer(function(request, response) {
       response.end();
     });
   }
+  else if (request.url === '/belvedere') {
+    fs.readFile('belvedere.html', 'utf8', function(errors, contents) {
+      response.writeHead(200, {'Content-Type': 'text/html'});
+      response.write(contents);
+      response.end();
+    });
+  }
   else {
     response.writeHead(404);
     response.end('File not found');
