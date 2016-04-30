@@ -1,5 +1,6 @@
 var http = require('http');
 var fs = require('fs');
+const PORT = 7077;
 
 var server = http.createServer(function(request, response) {
   if (request.url === '/bars') {
@@ -21,5 +22,5 @@ var server = http.createServer(function(request, response) {
     response.end('File nto found, dog');
   }
 });
-server.listen(6789);
-console.log('Server running on 6789');
+server.listen(PORT);
+console.log('Server running on port ' + PORT);
