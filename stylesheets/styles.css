@@ -1,0 +1,60 @@
+html {
+  background-color: lightgray;
+  background: ../images/social/adventure-tomcat.png;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.pageWrapper {
+  border: 0.2em solid black;
+  border-radius: 0.5em;
+  margin: 0 1em 1em 1em;
+}
+
+header {
+  border:0.1em solid blue;
+  margin: 1em;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+main {
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bar {
+  height: 10em;
+  width: 10em;
+  /*background-color: red;*/
+}
+
+.bar img {
+  height: inherit;
+  width: inherit;
+  border-radius: 1em 3em 1em 3em;
+}
+
+footer {
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social {
+  height: 5em;
+  width: 5em;
+  background-color: white;
+  border-radius: 100em;
+}
+
+.social img {
+  height: inherit;
+  width: inherit;
+}
