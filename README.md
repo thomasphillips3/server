@@ -41,3 +41,10 @@ Your server handles the following URL requests:
 
 The point of this exercise is to build a NodeJS server that serves all types of content
 ___
+
+## `Duckworth`
+Create a survey form that
+* renders views/index.ejs that has the form for the user to fill out
+* allows user to fill out the form and submit
+* sends submitted form to /result
+* recognizes when someone posts to /result, grabs information from the POST, and sends the POST data back as it renders views/results.ejs
