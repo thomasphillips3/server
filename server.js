@@ -1,19 +1,16 @@
 var express = require('express');
+var bodyParser = require('body-parser');
+var path = require('path');
+
 var app = express();
+
+app.use(bodyParser.urlencoded());
+app.use(express.static(path.join(__dirname, './static'));
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
-app.get('/', function(request, response){
-  response.redirect('/index');
-})
-
-app.get('/index', function(request, response){
-  response.render('index');
-  console.log('redirected');
-})
-
-app.use(express.static(__dirname + '/views'));
+var route = require(./routes/index.js)(app);
 
 app.listen(9999, function(){
   console.log("port 9999");
