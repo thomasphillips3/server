@@ -3,7 +3,7 @@ Practicing Node and Express servers from various soruces. Each branch is a diffe
 ___
 
 ## `Alfred`
-![`Alfred`](http://cdn.fansided.com/wp-content/blogs.dir/314/files/2014/04/alfred-pennyworth.jpg)  
+<img src="http://cdn.fansided.com/wp-content/blogs.dir/314/files/2014/04/alfred-pennyworth.jpg" width="250">
 
 From [The Node Beginner Book](http://www.nodebeginner.org/).
 
@@ -22,7 +22,7 @@ Furthermore, we don't want to write only the most basic code to achieve the goal
 ___
 
 ## `Belvedere`
-![`Belvedere`](http://newsite.annotatedmst.com/tinymce/plugins/moxiemanager/data/files/Operation%20007/mr%20belvedere.png)  
+<img src="http://newsite.annotatedmst.com/tinymce/plugins/moxiemanager/data/files/Operation%20007/mr%20belvedere.png" width="250">
 
 Basic server that uses FS and HTTP modules to serve basic HTTP pages. Very barebones NodeJS server with ony two modules included.
 
@@ -32,7 +32,7 @@ Basic server that uses FS and HTTP modules to serve basic HTTP pages. Very bareb
 ___
 
 ## `Cinderella`
-![`Cinderella`](http://studentweb.cortland.edu/SuMin.Son/pic/disney2.jpg)  
+<img src="http://studentweb.cortland.edu/SuMin.Son/pic/disney2.jpg" width = "250">
 
 Create a folder called bars_and_bats as the root folder for this project.  Within this folder, create:
 
@@ -50,10 +50,21 @@ The point of this exercise is to build a NodeJS server that serves all types of 
 ___
 
 ## `Duckworth`
-![`Duckworth`](http://wondersofdisney.yolasite.com/resources/toondis/ducktales/duckworth.gif)  
+<img src="http://wondersofdisney.yolasite.com/resources/toondis/ducktales/duckworth.gif" width="250">
 
 Create a survey form that
-* renders views/index.ejs that has the form for the user to fill out
+* renders `views/index.ejs` that has the form for the user to fill out
 * allows user to fill out the form and submit
-* sends submitted form to /result
+* sends submitted form to `views/result.ejs`
 * recognizes when someone posts to /result, grabs information from the POST, and sends the POST data back as it renders views/results.ejs
+
+## `Edgar`
+<img src="http://photos.auctionanything.com/x/9186/w447a.jpg" width="250">
+
+Create a [socket](http://socket.io/) application that
+* renders `views/index.ejs` that has the form for the user to fill out
+* allows user to fill out the form and submit
+* form information is EMITTED to the server with the event name `posting_form`
+* server listens for an event `posting_form` and when this event gets triggered, organizes all the emitted information to form a single message and sends this single message with the event called `updated_message`. It also EMITs an event called `random_number` with random number between 1-1000.
+* client listens for an event called `random_number` and when this event gets triggered, shows the number in the HTML.
+The client listens for an event called `updated_message` and when this event gets triggered, displays the message somewhere in the HTML
