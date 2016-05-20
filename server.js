@@ -9,8 +9,14 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
   response.render('index');
-})
+});
 
-app.listen(9999, function() {
+var server = app.listen(9999, function() {
   console.log('listening on 9999');
+});
+
+var io = require('socket.io').listen(server);
+io.sockets.on('connection', function(socket){
+  console.log('socket connected');
+  console.log(socket.id);
 })
