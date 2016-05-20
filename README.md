@@ -2,7 +2,7 @@
 Practicing Node and Express servers from various soruces. Each branch is a different tutorial. Notice, I have used names of different butlers and housekeepers (i.e SERVERS) as the branch names. That shit is clever, dog. Don't front on the boy.
 ___
 
-## `Alfred`
+## [`Alfred`](http://cdn.fansided.com/wp-content/blogs.dir/314/files/2014/04/alfred-pennyworth.jpg)
 From [The Node Beginner Book](http://www.nodebeginner.org/).
 
 ### A full blown web application with Node.js
@@ -19,7 +19,7 @@ Fair enough. Now, you could achieve this goal by googling and hacking together s
 Furthermore, we don't want to write only the most basic code to achieve the goal, however elegant and correct this code might be. We will intentionally add more abstraction than necessary in order to get a feeling for building more complex Node.js applications.
 ___
 
-## `Belvedere`
+## [`Belvedere`](http://newsite.annotatedmst.com/tinymce/plugins/moxiemanager/data/files/Operation%20007/mr%20belvedere.png)
 Basic server that uses FS and HTTP modules to serve basic HTTP pages. Very barebones NodeJS server with ony two modules included.
 
 * FS
@@ -27,7 +27,7 @@ Basic server that uses FS and HTTP modules to serve basic HTTP pages. Very bareb
 
 ___
 
-## `Cinderella`
+## [`Cinderella`](http://studentweb.cortland.edu/SuMin.Son/pic/disney2.jpg)
 Create a folder called bars_and_bats as the root folder for this project.  Within this folder, create:
 
 * app.js - node server.
@@ -43,7 +43,7 @@ Your server handles the following URL requests:
 The point of this exercise is to build a NodeJS server that serves all types of content
 ___
 
-## `Duckworth`
+## [`Duckworth`](http://wondersofdisney.yolasite.com/resources/toondis/ducktales/duckworth.gif)
 Create a survey form that
 * renders views/index.ejs that has the form for the user to fill out
 * allows user to fill out the form and submit
