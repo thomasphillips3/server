@@ -19,4 +19,9 @@ var io = require('socket.io').listen(server);
 io.sockets.on('connection', function(socket){
   console.log('socket connected');
   console.log(socket.id);
+
+  socket.on('button_clicked', function(data) {
+    console.log('clicked that button cuz ' + data.reason);
+    socket.emit('server_response', {response: 'sockets are dope'});
+  })
 })
