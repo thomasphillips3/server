@@ -62,6 +62,14 @@ Create a survey form that
 <img src="http://photos.auctionanything.com/x/9186/w447a.jpg" width="250">
 
 Create a [socket](http://socket.io/) application that
+* renders a button on `views/index.ejs`
+* creates a socket connection
+* client emits a message when the button is pressed
+* server emits a message when the client's message is received
+
+## `Florence`
+<img src="https://s-media-cache-ak0.pinimg.com/236x/68/5e/cc/685ecceaf02fbcfa018c9e487005ea24.jpg" width="250">
+
 * renders `views/index.ejs` that has the form for the user to fill out
 * allows user to fill out the form and submit
 * form information is EMITTED to the server with the event name `posting_form`
